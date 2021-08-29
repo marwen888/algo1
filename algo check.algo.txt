@@ -1,0 +1,33 @@
+VAR
+str:STRING.
+M:BOOLEAN:=False;
+i:INTEGER;
+count:INTEGER:=0;
+BEGIN
+FOR i FROM 0 TO length(str) DO
+{count++
+}
+
+END_FOR
+WRITE (count);
+
+WHILE (i<length (str)) DO
+  IF(str[i]=' ') THEN
+       M:=TRUE;
+   ELSE_IF(M=TRUE)
+     count++
+     M=FALSE;
+  END_IF
+
+WRITE( count);
+
+FOR i FROM 0 TO length(str) DO
+CHAR:=str[i]
+  IF( CHAR='a' OR CHAR='e' OR CHAR='i' OR CHAR='o' OR CHAR='u')THEN
+                  COUNT++;
+  END_IF
+
+ END_FOR
+
+ END
+
