@@ -2,29 +2,29 @@ VAR
 str:STRING.
 M:BOOLEAN:=False;
 i:INTEGER;
-count:INTEGER:=0;
+count1,count2,count3:INTEGER:=0;
 BEGIN
 FOR i FROM 0 TO str.length-1 DO
-{count++
+{count1++
 }
 
 END_FOR
-WRITE (count);
+WRITE (count1);
 
 WHILE (i<str.length) DO
   IF(str[i]=' ') THEN
        M:=TRUE;
    ELSE_IF(M=TRUE)
-     count++
+     count2++
      M=FALSE;
   END_IF
 
-WRITE( count);
+WRITE( count2);
 
 FOR i FROM 0 TO str.length-1 DO
 CHAR:=str[i]
   IF( CHAR='a' OR CHAR='e' OR CHAR='i' OR CHAR='o' OR CHAR='u')THEN
-                  COUNT++;
+                  count3++;
   END_IF
 
  END_FOR
